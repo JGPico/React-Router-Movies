@@ -10,6 +10,7 @@ const MovieList = props => {
         .get('http://localhost:5000/api/movies')
         .then(response => {
           setMovies(response.data);
+          console.log("This is the movies api ", response);
         })
         .catch(error => {
           console.error('Server Error', error);
@@ -48,7 +49,7 @@ function MovieDetails({ movie }) {
         </div>
       ))}
     </div>
-    </Link>
+   </Link>
   );
 }
 

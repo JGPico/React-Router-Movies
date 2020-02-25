@@ -6,6 +6,7 @@ const Movie = (props) => {
   const [movie, setMovie] = useState();
   const {id} = useParams();
   console.log("Movie.js props = ", props);
+  console.log("This is the Params", id);
   useEffect(() => {
     const idMatch = id;
     // change ^^^ that line and grab the id from the URL
